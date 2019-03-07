@@ -18,3 +18,9 @@ class Log():
                                     low_formatter=formatter,
                                     high_level='info',
                                     high_formatter=formatter).logger
+
+    def get_corelogger(self):
+        return self.corelogger
+
+    def get_clientlogger(self):
+        return self.clientlogger
